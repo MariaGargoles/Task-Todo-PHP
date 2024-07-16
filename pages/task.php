@@ -14,10 +14,7 @@ if ($Task_Name) {
         $jsonArray = [];
     }
 
-    $jsonArray[] = [
-        'name' => $Task_Name,
-        'completed' => false
-    ];
+    $jsonArray[$Task_Name] = ['completed' => false];
     file_put_contents($filePath, json_encode($jsonArray, JSON_PRETTY_PRINT));
 }
 
