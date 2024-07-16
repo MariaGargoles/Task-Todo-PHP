@@ -1,7 +1,4 @@
 {
-    "Do the laundry": {
-        "completed": false
-    },
     "Clean the kitchen": {
         "completed": false
     },
@@ -30,13 +27,6 @@
         "completed": true
     },
     "buy new chair": {
-        "completed": false
-    },
-    "0": {
-        "name": "Go away",
-        "completed": false
-    },
-    "test": {
         "completed": false
     }
 }

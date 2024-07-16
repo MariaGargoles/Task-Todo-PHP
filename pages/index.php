@@ -2,12 +2,10 @@
 $filePath = __DIR__ . '/../data/tasks.json';
 $TaskItem = [];
 
-
 if (file_exists($filePath)) {
     $json = file_get_contents($filePath);
     $TaskItem = json_decode($json, true);
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -23,17 +21,19 @@ if (file_exists($filePath)) {
     <section>
         <form action="task.php" method="post">
             <input type="text" name="Task_Name" placeholder="Introduce tu tarea " />
-            <button>Enviar</button>
+            <button type="submit">Enviar</button>
+        </form>
     </section>
-    <?php
-    foreach ($TaskItem as $TaskName => $TaskItem) :  ?>
-        <div>
-            <input type="checkbox" <?php echo $TaskItem['completed'] ? 'checked' : ''   ?> />
-            <?php echo $TaskName ?>
-            <button>Delete</button>
-        </div>
+    <?php foreach ($TaskItem as $taskName => $task) : ?>
+    <div>
+        <input type="checkbox" <?php echo $task['completed'] ? 'checked' : '' ?> />
+        <?php echo htmlspecialchars($taskName); ?>
+        <form action="delete.php" method="post" style="display:inline;">
+            <input type="hidden" name="TaskName" value="<?php echo htmlspecialchars($taskName); ?>" />
+            <button type="submit">Delete</button>
+        </form>
+    </div>
     <?php endforeach; ?>
-
 </body>
 
 </html>
