@@ -1,32 +1,62 @@
-{
-    "Clean the kitchen": {
+[
+    {
+        "id": 1,
+        "title": "Clean the kitchen",
+        "description": "Clean dishes and wipe counters",
         "completed": false
     },
-    "Take out the trash": {
+    {
+        "id": 2,
+        "title": "Take out the trash",
+        "description": "Take the trash out to the curb",
         "completed": true
     },
-    "Vacuum the living room": {
+    {
+        "id": 3,
+        "title": "Vacuum the living room",
+        "description": "Vacuum all carpeted areas",
         "completed": false
     },
-    "Dust the shelves": {
+    {
+        "id": 4,
+        "title": "Dust the shelves",
+        "description": "Dust all shelves and surfaces",
         "completed": true
     },
-    "Mop the floor": {
+    {
+        "id": 5,
+        "title": "Mop the floor",
+        "description": "Mop all hard floor surfaces",
         "completed": false
     },
-    "Organize the closet": {
+    {
+        "id": 6,
+        "title": "Organize the closet",
+        "description": "Organize and clean the closet",
         "completed": false
     },
-    "Water the plants": {
+    {
+        "id": 7,
+        "title": "Water the plants",
+        "description": "Water all indoor and outdoor plants",
         "completed": true
     },
-    "Prepare dinner": {
+    {
+        "id": 8,
+        "title": "Prepare dinner",
+        "description": "Prepare and cook dinner",
         "completed": false
     },
-    "go out with Kaori": {
+    {
+        "id": 9,
+        "title": "go out with Kaori",
+        "description": "Spend time outside with Kaori",
         "completed": true
     },
-    "buy new chair": {
+    {
+        "id": 10,
+        "title": "buy new chair",
+        "description": "Purchase a new chair for the living room",
         "completed": false
     }
-}
+]

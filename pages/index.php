@@ -1,10 +1,10 @@
 <?php
 $filePath = __DIR__ . '/../data/tasks.json';
-$TaskItem = [];
+$TaskItems = [];
 
 if (file_exists($filePath)) {
     $json = file_get_contents($filePath);
-    $TaskItem = json_decode($json, true);
+    $TaskItems = json_decode($json, true);
 }
 ?>
 
@@ -20,20 +20,24 @@ if (file_exists($filePath)) {
 <body>
     <section>
         <form action="task.php" method="post">
-            <input type="text" name="Task_Name" placeholder="Introduce tu tarea " />
-            <button type="submit">Enviar</button>
+            <input type="text" name="Task_Title" placeholder="Task Title" required />
+            <input type="text" name="Task_Description" placeholder="Task Description" required />
+            <button type="submit">Add Task</button>
         </form>
     </section>
-    <?php foreach ($TaskItem as $taskName => $task) : ?>
-    <div>
-        <input type="checkbox" <?php echo $task['completed'] ? 'checked' : '' ?> />
-        <?php echo htmlspecialchars($taskName); ?>
-        <form action="delete.php" method="post" style="display:inline;">
-            <input type="hidden" name="TaskName" value="<?php echo htmlspecialchars($taskName); ?>" />
-            <button type="submit">Delete</button>
-        </form>
-    </div>
-    <?php endforeach; ?>
+    <section>
+        <?php foreach ($TaskItems as $task) : ?>
+            <div>
+                <input type="checkbox" <?php echo $task['completed'] ? 'checked' : '' ?> disabled />
+                <?php echo ($task['title']); ?>:
+                <?php echo ($task['description']); ?>
+                <form action="delete.php" method="post" style="display:inline;">
+                    <input type="hidden" name="TaskID" value="<?php echo ($task['id']); ?>" />
+                    <button type="submit">Delete</button>
+                </form>
+            </div>
+        <?php endforeach; ?>
+    </section>
 </body>
 
 </html>
