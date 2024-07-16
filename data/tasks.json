@@ -40,5 +40,13 @@
             "name": "go out with Kaori",
             "completed": true
         }
-    ]
+    ],
+    "0": {
+        "name": "buy new chair",
+        "completed": false
+    },
+    "1": {
+        "name": "buy new chair",
+        "completed": false
+    }
 }
