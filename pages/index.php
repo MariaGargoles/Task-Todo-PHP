@@ -5,7 +5,7 @@ $TaskItem = [];
 
 if (file_exists($filePath)) {
     $json = file_get_contents($filePath);
-    $TaskItem = json_decode($json);
+    $TaskItem = json_decode($json, true);
 }
 
 ?>
@@ -26,9 +26,13 @@ if (file_exists($filePath)) {
             <button>Enviar</button>
     </section>
     <?php
-    foreach ($TaskItem as $TaskName => $TaskItem) { ?>
-        <div>Task item</div>
-    <?php } ?>
+    foreach ($TaskItem as $TaskName => $TaskItem) :  ?>
+        <div>
+            <input type="checkbox" <?php echo $TaskItem['completed'] ? 'checked' : ''   ?> />
+            <?php echo $TaskName ?>
+            <button>Delete</button>
+        </div>
+    <?php endforeach; ?>
 
 </body>
 
