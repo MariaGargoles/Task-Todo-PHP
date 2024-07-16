@@ -1,0 +1,44 @@
+{
+    "tasks": [
+        {
+            "name": "Do the laundry",
+            "completed": false
+        },
+        {
+            "name": "Clean the kitchen",
+            "completed": false
+        },
+        {
+            "name": "Take out the trash",
+            "completed": true
+        },
+        {
+            "name": "Vacuum the living room",
+            "completed": false
+        },
+        {
+            "name": "Dust the shelves",
+            "completed": true
+        },
+        {
+            "name": "Mop the floor",
+            "completed": false
+        },
+        {
+            "name": "Organize the closet",
+            "completed": false
+        },
+        {
+            "name": "Water the plants",
+            "completed": true
+        },
+        {
+            "name": "Prepare dinner",
+            "completed": false
+        },
+        {
+            "name": "go out with Kaori",
+            "completed": true
+        }
+    ]
+}
