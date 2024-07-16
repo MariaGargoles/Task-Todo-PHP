@@ -1,3 +1,15 @@
+<?php
+$filePath = __DIR__ . '/../data/tasks.json';
+$TaskItem = [];
+
+
+if (file_exists($filePath)) {
+    $json = file_get_contents($filePath);
+    $TaskItem = json_decode($json);
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,9 +25,10 @@
             <input type="text" name="Task_Name" placeholder="Introduce tu tarea " />
             <button>Enviar</button>
     </section>
-    <section>
-
-    </section>
+    <?php
+    foreach ($TaskItem as $TaskName => $TaskItem) { ?>
+        <div>Task item</div>
+    <?php } ?>
 
 </body>
 
