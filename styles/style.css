@@ -1,0 +1,67 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    align-content: center;
+}
+
+body {
+    background-color:  #eaecee;
+
+}
+.SectionForm {
+    margin: 5rem 2.5rem;
+    padding: 4rem;
+    background-color:  #ffff;
+    border: 1px solid #d5d8dc; 
+    border-radius: 2.5rem;
+    display: flex;
+   justify-content: center;
+
+}
+
+.SectionForm__Title {
+    font-size: 2em;
+    font-family: "Poppins", sans-serif;
+    padding: 1rem;
+
+}
+
+.ArticleTaskForm__Form {
+    display: flex;
+    flex-direction: column;
+}
+
+.ArticleTaskForm__Input {
+    margin: 1rem;
+    padding: 0.3rem;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.ArticleTaskForm__Button {
+    margin: 1rem;
+    padding: 0.5rem;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    border-radius: 1rem;
+    background-color: #7dcea0;
+    &:hover {
+        background-color:  #2ecc71;
+    }
+}
+
+.ArticleTask__List {
+    font-family: "Poppins", sans-serif;
+}
+
+.ArticleTask__Button {
+    margin: 1rem;
+    padding: 0.5rem;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    border-radius: 1rem;
+    background-color: #e74c3c;
+    &:hover {
+        background-color:  #cb4335;
+    }
+}
