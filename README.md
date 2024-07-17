@@ -27,5 +27,6 @@ Abre tu navegador web y navega a http://localhost/pages/index.php para ver la ap
 
 ## Paso 4: Usa la aplicacion a tu gusto!
 Se deberia ver asi
-[Imagen pendiente de insertar]
 
+
+![phpindex](https://github.com/user-attachments/assets/d4d6845f-fab2-42b3-9bb3-d709c5faa349)
