@@ -1,28 +1,25 @@
-* {
+body {
+  
+    background-color: #f2f4f4;
     margin: 0 auto;
     padding: 0;
-    align-content: center;
 }
 
-body {
-    background-color:  #eaecee;
-
-}
 .SectionForm {
-    margin: 5rem 2.5rem;
-    padding: 4rem;
-    background-color:  #ffff;
-    border: 1px solid #d5d8dc; 
-    border-radius: 2.5rem;
-    display: flex;
-   justify-content: center;
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
 }
 
 .SectionForm__Title {
-    font-size: 2em;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
     font-family: "Poppins", sans-serif;
-    padding: 1rem;
+    
 
 }
 
@@ -32,34 +29,41 @@ body {
 }
 
 .ArticleTaskForm__Input {
-    margin: 1rem;
-    padding: 0.3rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
     font-family: "Poppins", sans-serif;
 
 }
 
 .ArticleTaskForm__Button {
-    margin: 1rem;
     padding: 0.5rem;
+    background-color:   #2ecc71;
+    color: #fff;
     border: none;
+    border-radius: 4px;
+    cursor: pointer;
     font-family: "Poppins", sans-serif;
-    border-radius: 1rem;
-    background-color: #7dcea0;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    width: 40%;
     &:hover {
-        background-color:  #2ecc71;
+        background-color: #239b56;
     }
 }
 
 .ArticleTask__List {
     font-family: "Poppins", sans-serif;
+    background-color: #ffffff;
 }
 
 .ArticleTask__Button {
     margin: 1rem;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     border: none;
     font-family: "Poppins", sans-serif;
-    border-radius: 1rem;
+    border-radius: 4px;
     background-color: #e74c3c;
     &:hover {
         background-color:  #cb4335;

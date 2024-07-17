@@ -52,11 +52,5 @@
         "title": "go out with Kaori",
         "description": "Spend time outside with Kaori",
         "completed": true
-    },
-    {
-        "id": 10,
-        "title": "buy new chair",
-        "description": "Purchase a new chair for the living room",
-        "completed": false
     }
 ]
